@@ -7,6 +7,10 @@ export class Vec3 {
   /** Creates a vector from a point. */
   static fromPoint = (p: Point3) => new Vec3(p.x, p.y, p.z);
 
+  /** Creates a vector from an array. */
+  static fromArray = (a: [number, number, number]) =>
+    new Vec3(a[0], a[1], a[2]);
+
   /** Adds two vectors and returns the result. */
   add = (v: Vec3): Vec3 => new Vec3(this.x + v.x, this.y + v.y, this.z + v.z);
   /** Subtracts two vectors and returns the result. */

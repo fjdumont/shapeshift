@@ -7,6 +7,9 @@ export class Vec2 {
   /** Creates a vector from a point. */
   static fromPoint = (p: Point2) => new Vec2(p.x, p.y);
 
+  /** Creates a vector from an array. */
+  static fromArray = (a: [number, number]) => new Vec2(a[0], a[1]);
+
   /** Adds two vectors and returns the result. */
   add = (v: Vec2): Vec2 => new Vec2(this.x + v.x, this.y + v.y);
   /** Subtracts two vectors and returns the result. */
